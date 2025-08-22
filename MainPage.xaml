@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TreeHouse.MainPage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="30"
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+
+            <Image
+                Source="iconbr.png"
+                HeightRequest="180"
+                Aspect="AspectFit"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="En TreeHouse Bienes Raices trabajamos para ofrecer un servicio de calidad. 
+                Gestionando propiedades con compromiso, transparencia y cercanía."
+                FontSize="16"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                LineBreakMode="WordWrap"
+                TextColor="Black" 
+                WidthRequest="320" />
+
+            
+            <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+
+                <Button
+                    Text="Registrate"
+                    Clicked="OnRegisterClicked"
+                    BackgroundColor="White"
+                    BorderColor="DarkGreen"
+                    BorderWidth="1"
+                    TextColor="DarkGreen"
+                    WidthRequest="140"
+                    HeightRequest="48"
+                    CornerRadius="8" />
+
+                <Button
+                    Text="Iniciar Sesión"
+                    Clicked="OnLoginClicked"
+                    BackgroundColor="White"
+                    BorderColor="DarkGreen"
+                    BorderWidth="1"
+                    TextColor="DarkGreen"
+                    WidthRequest="140"
+                    HeightRequest="48"
+                    CornerRadius="8" />
+                    
+            </HorizontalStackLayout> 
+                       
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

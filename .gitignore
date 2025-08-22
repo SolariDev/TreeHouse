@@ -1,0 +1,57 @@
+# Carpetas de compilación
+bin/
+obj/
+.vs/
+.vscode/
+bld/
+x64/
+x86/
+ARM/
+ARM64/
+Debug*/
+Release*/
+Logs/
+
+# Archivos temporales y de respaldo
+*.tmp
+*.bak
+*.old
+~$*
+*~
+
+# Archivos de sistema y diseño
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Archivos de configuración local
+*.user
+*.suo
+*.swp
+*.psess
+*.vsp
+*.dbmdl
+*.rsusers
+*.usuario
+*.userosscache
+*.sln.docestados
+*.Env
+
+# Archivos de entorno MAUI
+Resources/**/*.dll
+Resources/**/*.exe
+Resources/**/*.pdb
+
+# Build y test
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.binlog
+CodeCoverage/
+TestResult.xml
+*.VisualState.xml
+ScaffoldingReadMe.txt
+
+# Paquetes NuGet
+*.nupkg
+*.snupkg
