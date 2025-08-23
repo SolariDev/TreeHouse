@@ -5,11 +5,7 @@
              BackgroundColor="White">
 
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,60,30,30"
-            Spacing="36"
-            VerticalOptions="Start"
-            HorizontalOptions="Center">
+        <VerticalStackLayout Style="{StaticResource Ajuste}">
 
             <Image
                 Source="iconbr.png"

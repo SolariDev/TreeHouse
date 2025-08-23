@@ -1,4 +1,8 @@
-﻿namespace TreeHouse;
+﻿using Microsoft.Maui.Controls;
+using System;
+using TreeHouse.Views;
+
+namespace TreeHouse;
 
 public partial class MainPage : ContentPage
 {
@@ -9,12 +13,12 @@ public partial class MainPage : ContentPage
 
 	private async void OnRegisterClicked(object sender, EventArgs e)
 	{
-		await DisplayAlert("Registro", "Pantalla en construcción", "OK");
+		await Navigation.PushAsync(new Registro());
 	}
 
 	private async void OnLoginClicked(object sender, EventArgs e)
 	{
-		await DisplayAlert("Inicio de sesión", "Pantalla en construcción", "OK");
+		await Navigation.PushAsync(new Login());
 	}
 }
 

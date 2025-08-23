@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TreeHouse.Views.Registro"
+             BackgroundColor="White"
+             Title="Registro">
+             
+    <ScrollView>
+        <VerticalStackLayout Style="{StaticResource Ajuste}">
+
+            <Image
+                Source="iconbr.png"
+                HeightRequest="300"
+                WidthRequest="320"
+                Aspect="Fill"
+                HorizontalOptions="Center"
+                Margin="0,0,0,12" />
+
+            <Label Text="Crea tu cuenta"
+                   Style="{StaticResource Titulo}" />
+
+           
+            <Entry x:Name="nombreEntry" Placeholder="Nombre" />            
+            <Entry x:Name="apellidoEntry" Placeholder="Apellido" />            
+            <Entry x:Name="correoEntry" Placeholder="Correo electrónico" Keyboard="Email" />            
+            <Entry x:Name="contraseñaEntry" Placeholder="Contraseña" IsPassword="True" />
+
+            <Button Text="Registrate"
+                    Clicked="OnRegistrateClicked"
+                    BackgroundColor="#004AAD"
+                    TextColor="White"
+                    FontSize="16"
+                    FontFamily="MontserratBold"
+                    CornerRadius="8"
+                    HeightRequest="48"
+                    Margin="0,18,0,0"
+                    HorizontalOptions="Fill" />
+
+            <Label Text="¿Ya tenés cuenta? Inicia Sesión"
+                   Style="{StaticResource Link}">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLoginTapped" />
+                </Label.GestureRecognizers>                   
+            </Label>
+
+        </VerticalStackLayout>        
+    </ScrollView>             
+</ContentPage>
