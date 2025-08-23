@@ -6,51 +6,42 @@
 
     <ScrollView>
         <VerticalStackLayout
-            Padding="30"
-            Spacing="30"
-            VerticalOptions="Center"
+            Padding="30,60,30,30"
+            Spacing="36"
+            VerticalOptions="Start"
             HorizontalOptions="Center">
 
             <Image
                 Source="iconbr.png"
-                HeightRequest="180"
-                Aspect="AspectFit"
-                HorizontalOptions="Center" />
+                HeightRequest="300"
+                WidthRequest="320"
+                Aspect="Fill"
+                HorizontalOptions="Center"
+                Margin="0,0,0,12" />
 
             <Label
-                Text="En TreeHouse Bienes Raices trabajamos para ofrecer un servicio de calidad. 
-                Gestionando propiedades con compromiso, transparencia y cercanía."
-                FontSize="16"
+                Text="En TreeHouse Bienes Raices trabajamos para ofrecer un servicio de calidad gestionando propiedades con compromiso, transparencia y cercanía."
+                FontSize="20"
+                FontFamily="MontserratMedium"
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center"
                 LineBreakMode="WordWrap"
                 TextColor="Black" 
-                WidthRequest="320" />
+                WidthRequest="600"
+                Margin="24,0,24,24" />
 
             
-            <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+            <HorizontalStackLayout Spacing="65" HorizontalOptions="Center">
 
                 <Button
                     Text="Registrate"
-                    Clicked="OnRegisterClicked"
-                    BackgroundColor="White"
-                    BorderColor="DarkGreen"
-                    BorderWidth="1"
-                    TextColor="DarkGreen"
-                    WidthRequest="140"
-                    HeightRequest="48"
-                    CornerRadius="8" />
+                    Clicked="OnRegisterClicked" 
+                    HorizontalOptions="Fill" />
 
                 <Button
                     Text="Iniciar Sesión"
-                    Clicked="OnLoginClicked"
-                    BackgroundColor="White"
-                    BorderColor="DarkGreen"
-                    BorderWidth="1"
-                    TextColor="DarkGreen"
-                    WidthRequest="140"
-                    HeightRequest="48"
-                    CornerRadius="8" />
+                    Clicked="OnLoginClicked" 
+                    HorizontalOptions="Fill" />
                     
             </HorizontalStackLayout> 
                        
