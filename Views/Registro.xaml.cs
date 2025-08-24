@@ -5,6 +5,7 @@ namespace TreeHouse.Views
 {
     public partial class Registro : ContentPage
     {
+        private bool isPasswordHidden = true;
         public Registro()
         {
             InitializeComponent();
@@ -33,6 +34,13 @@ namespace TreeHouse.Views
             private async void OnLoginTapped(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Login());
+        }
+
+        private void OnTogglePasswordClicked(object sender, EventArgs e)
+        {
+            isPasswordHidden = !isPasswordHidden;
+            contraseñaEntry.IsPassword = isPasswordHidden;
+            togglePasswordButton.Source = isPasswordHidden ? "eye_closed.png" : "eye.png";
         }
     }
 }

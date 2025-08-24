@@ -12,7 +12,7 @@
                 Source="iconbr.png"
                 HeightRequest="300"
                 WidthRequest="320"
-                Aspect="Fill"
+                Aspect="AspectFit"
                 HorizontalOptions="Center"
                 Margin="0,0,0,12" />
 
@@ -21,12 +21,31 @@
                    FontFamily="MontserratRegular"
                    TextColor="#004AAD"
                    HorizontalOptions="Center"
-                   Margin="0,12,0,12" />
+                   Margin="0,8,0,12" />
 
             <Entry Placeholder="Correo electrónico" />
 
-            <Entry Placeholder="Contraseña"
-                   IsPassword="True" />
+            <AbsoluteLayout HeightRequest="48"
+                            WidthRequest="320"
+                            Margin="0,0,0,12"
+                            HorizontalOptions="Center">
+                                 
+                <Entry x:Name="contraseñaEntry" 
+                       Placeholder="Contraseña" 
+                       IsPassword="True" 
+                       AbsoluteLayout.LayoutBounds="0,0,1,1"
+                       AbsoluteLayout.LayoutFlags="All" />
+
+                <ImageButton x:Name="togglePasswordButton"
+                             Source="eye_closed.png"
+                             BackgroundColor="Transparent"
+                             WidthRequest="24"
+                             HeightRequest="24"
+                             Clicked="OnTogglePasswordClicked"
+                             AbsoluteLayout.LayoutBounds="1,0.5,24,24"
+                             AbsoluteLayout.LayoutFlags="PositionProportional"                                
+                             VerticalOptions="Center" />
+            </AbsoluteLayout>
 
             <Button Text="Iniciar Sesión"
                     Clicked="OnLoginClicked"

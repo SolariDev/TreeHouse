@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TreeHouse.Views.Principal"
+             Title="Bienvenido">
+
+    <VerticalStackLayout Style="{StaticResource Ajuste}">
+
+        <Image
+                Source="icon.png"
+                HeightRequest="300"
+                WidthRequest="320"
+                Aspect="AspectFit"
+                HorizontalOptions="Center"
+                Margin="0,0,0,12" />    
+        
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="30">
+
+            <Button Text="Nuevo Contrato"
+                    Clicked="OnNuevoContratoClicked" />
+
+            <Button Text="Historial"
+                    Clicked="OnHistorialClicked" />
+        </HorizontalStackLayout>
+                
+    </VerticalStackLayout>
+</ContentPage>
