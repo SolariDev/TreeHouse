@@ -12,7 +12,7 @@ namespace TreeHouse.Views
 
         private async void OnNuevoContratoClicked(object sender, EventArgs e)
         {
-            await DisplayAlert("Nuevo Contrato", "Proximamente", "OK");
+            await Navigation.PushAsync(new NuevoContrato());
         }
 
         private async void OnHistorialClicked(object sender, EventArgs e)

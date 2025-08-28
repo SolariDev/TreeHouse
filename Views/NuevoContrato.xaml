@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TreeHouse.Views.NuevoContrato">
+
+    <ScrollView>
+        <VerticalStackLayout Style="{StaticResource Ajuste}" Margin="32,0,0,0" WidthRequest="400">
+
+            <Label Text="Nuevo Contrato" Style="{StaticResource Titulo}" />
+
+            <Label Text="Propietario/a" Style="{StaticResource Seccion}" />
+                <HorizontalStackLayout Spacing="12">
+                    <Entry Placeholder="Nombre" Style="{StaticResource EntryMitad}"  />
+                    <Entry Placeholder="Apellido" Style="{StaticResource EntryMitad}" />
+                </HorizontalStackLayout>
+                    <Entry Placeholder="Teléfono de contacto" Keyboard="Telephone" Style="{StaticResource EntryForm}"/>
+                    <Entry Placeholder="Mail" Keyboard="Email" Style="{StaticResource EntryForm}" />
+
+            <Label Text="Inquilino/a" Style="{StaticResource Seccion}" />
+                <HorizontalStackLayout Spacing="12"> 
+                    <Entry Placeholder="Nombre" Style="{StaticResource EntryMitad}" />
+                    <Entry Placeholder="Apellido" Style="{StaticResource EntryMitad}" />
+                </HorizontalStackLayout>
+                    <Entry Placeholder="Teléfono de contacto" Keyboard="Telephone" Style="{StaticResource EntryForm}"/>
+                    <Entry Placeholder="Mail" Keyboard="Email" Style="{StaticResource EntryForm}" />
+
+            <Label Text="Dirección del inmueble" Style="{StaticResource Seccion}" />
+                <Entry Placeholder="Dirección" Style="{StaticResource EntryForm}" />
+                <HorizontalStackLayout Spacing="12">
+                    <Entry Placeholder="Apartameto"  Style="{StaticResource EntryMitad}" />
+                    <Entry Placeholder="Garage" Style="{StaticResource EntryMitad}" />            
+                </HorizontalStackLayout>
+
+            <Label Text="Precio del alquiler" Style="{StaticResource Seccion}" />
+                <HorizontalStackLayout Spacing="12">            
+                    <RadioButton Content="Pesos" GroupName="Moneda" />
+                    <RadioButton Content="Dólares" GroupName="Moneda" />
+                </HorizontalStackLayout>
+                <Entry Placeholder="Monto" Keyboard="Numeric" Style="{StaticResource EntryForm }" />
+
+            <Label Text="Garantía" Style="{StaticResource Seccion}" />
+            
+                    <Picker Title="Seleccionar Garantía"
+                            FontSize="14"
+                            FontFamily="MontserratRegular"
+                            TextColor="Black"
+                            BackgroundColor="White">
+                        <Picker.Items>
+                                <x:String>PORTO SEGURO</x:String>
+                                <x:String>MAPFRE</x:String>
+                                <x:String>SURA</x:String>
+                                <x:String>ANDA</x:String>
+                                <x:String>CGM</x:String>
+                                <x:String>DEPÓSITO EN BHU</x:String>
+                                <x:String>PROPIEDAD</x:String>
+                        </Picker.Items>
+                    </Picker>
+           
+           
+            <Label Text="Tiempo de Contrato (en meses)" Style="{StaticResource Seccion}" />
+            <Entry Placeholder="Ej: 24" Keyboard="Numeric" Style="{StaticResource EntryForm}"/>
+
+            <Label Text="Fecha de inicio" Style="{StaticResource Seccion}" />
+            <DatePicker/>
+
+            <Label Text="Fecha de término" Style="{StaticResource Seccion}" />
+            <DatePicker/>
+
+            <Label Text="Link de carpeta Drive" Style="{StaticResource Seccion}" />
+            <Entry Placeholder="Link a Drive" Style="{StaticResource EntryForm}"/>
+
+            <Label Text="Tipo de reajuste" Style="{StaticResource Seccion}" />
+            <HorizontalStackLayout Spacing="12">
+                <RadioButton Content="IPC" GroupName="Reajuste" />
+                <RadioButton Content="URA" GroupName="Reajuste" />
+            </HorizontalStackLayout>
+          
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
